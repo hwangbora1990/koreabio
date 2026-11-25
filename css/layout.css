@@ -100,7 +100,7 @@ body {
 .main-visual .visual-list .swiper-slide .visual-text h2 {
   display: flex;
   gap: 25px;
-  font-size: 120px;
+  font-size: clamp(42px, 8vw, 120px);
   font-weight: 200;
 }
 .main-visual .visual-list .swiper-slide .visual-text h2 strong {
@@ -109,7 +109,7 @@ body {
 .main-visual .visual-list .swiper-slide .visual-text p {
   font-weight: 500;
   margin-top: 10px;
-  font-size: 25px;
+  font-size: clamp(14px, 1.7vw, 25px);
   line-height: 1.6;
 }
 .main-visual .visual-list .swiper-slide.swiper-slide-active .visual-text h2 {
@@ -204,5 +204,62 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    left: 30px;
+    right: 30px;
+  }
+  .header .logo {
+    left: 0;
+  }
+  .header .util-menu {
+    right: 0;
+  }
+  .header .gnb .list li a {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    left: 20px;
+    right: 20px;
+    top: 15px;
+  }
+  .header .gnb,
+  .header .util {
+    display: none;
+  }
+  .header .logo {
+    left: 0;
+  }
+  .header .util-menu {
+    right: 0;
+  }
+  .main-visual .visual-list .swiper-slide .visual-text {
+    left: 6%;
+    right: 6%;
+  }
+  .main-visual .visual-list .swiper-slide .visual-text h2 {
+    font-size: clamp(42px, 8vw, 120px);
+    gap: clamp(12px, 2vw, 25px);
+  }
+  .main-visual .visual-list .swiper-slide .visual-text p {
+    font-size: clamp(14px, 1.7vw, 25px);
+    margin-top: clamp(10px, 1vw, 15px);
+    line-height: 1.6;
+  }
+  .main-visual .visual-control {
+    left: 6%;
+    bottom: 12%;
+    gap: 20px;
+  }
+  .main-visual .visual-control .pagination {
+    gap: 15px;
+  }
+  .main-visual .visual-control .visual-arrow button {
+    width: 32px;
+    height: 32px;
   }
 }

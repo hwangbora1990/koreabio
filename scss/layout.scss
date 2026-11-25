@@ -118,7 +118,7 @@ body {
         h2 {
           display: flex;
           gap: 25px;
-          font-size: 120px;
+          font-size: clamp(42px, 8vw, 120px);
           font-weight: 200;
 
           strong {
@@ -129,7 +129,7 @@ body {
         p {
           font-weight: 500;
           margin-top: 10px;
-          font-size: 25px;
+          font-size: clamp(14px, 1.7vw, 25px);
           line-height: 1.6;
         }
       }
@@ -244,5 +244,78 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    left: 30px;
+    right: 30px;
+
+    .logo {
+      left: 0;
+    }
+
+    .util-menu {
+      right: 0;
+    }
+
+    .gnb .list li a {
+      padding: 0 25px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    left: 20px;
+    right: 20px;
+    top: 15px;
+
+    .gnb,
+    .util {
+      display: none;
+    }
+
+    .logo {
+      left: 0;
+    }
+
+    .util-menu {
+      right: 0;
+    }
+  }
+
+  .main-visual {
+    .visual-list .swiper-slide {
+      .visual-text {
+        left: 6%;
+        right: 6%;
+
+        h2 {
+          font-size: clamp(42px, 8vw, 120px);
+          gap: clamp(12px, 2vw, 25px);
+        }
+
+        p {
+          font-size: clamp(14px, 1.7vw, 25px);
+          margin-top: clamp(10px, 1vw, 15px);
+          line-height: 1.6;
+        }
+      }
+    }
+
+    .visual-control {
+      left: 6%;
+      bottom: 12%;
+      gap: 20px;
+
+      .pagination {
+        gap: 15px;
+      }
+
+      .visual-arrow button {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 }
