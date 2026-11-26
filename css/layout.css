@@ -196,6 +196,246 @@ body {
   font-variation-settings: "wght" 100;
 }
 
+.section02 {
+  padding: 200px 0;
+  background-image: url(../images/main/sec2_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 100px top 0;
+}
+.section02 .container {
+  width: calc(100% - 300px);
+  max-width: 1905px;
+  margin: 0 auto;
+  position: relative;
+}
+.section02 .text p {
+  font-size: 50px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.section02 .text p strong {
+  color: #fff;
+  background: #000;
+  border-radius: 50px;
+  padding: 6px 10px;
+}
+.section02 .text p b {
+  color: #252525;
+  font-weight: 700;
+}
+.section02 .img-box img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.section02 .img-box img:first-child {
+  width: 900px;
+  height: 445px;
+  margin-top: 95px;
+}
+.section02 .img-box img:last-child {
+  width: 400px;
+  height: 480px;
+  position: absolute;
+  top: 120px;
+  right: 0;
+}
+
+.section03 {
+  padding: 10px 16px;
+}
+.section03 .inner {
+  background-image: url(../images/main/sec3_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 100px 0;
+}
+.section03 .container {
+  width: calc(100% - 220px);
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+.section03 .notice,
+.section03 .news {
+  flex: 1;
+}
+.section03 h2 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.section03 .notice-box,
+.section03 .news-box {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px 3.13vw;
+}
+.section03 .notice-box .more {
+  display: flex;
+  width: 180px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s;
+}
+.section03 .notice-box .more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  transition: width 0.4s;
+}
+.section03 .notice-box .more:hover {
+  color: #fff;
+  border-color: #000;
+}
+.section03 .notice-box .more:hover::before {
+  width: 100%;
+}
+.section03 .notice-box .more span {
+  position: relative;
+  z-index: 1;
+}
+.section03 .notice-box li {
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+.section03 .notice-box dl {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.section03 .notice-box dt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 28px;
+  border-right: 1px solid #ddd;
+}
+.section03 .notice-box dt strong {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1;
+}
+.section03 .notice-box dt span {
+  font-size: 17px;
+  margin-top: 3px;
+}
+.section03 .notice-box dd {
+  flex: 1;
+}
+.section03 .notice-box dd p {
+  font-size: 24px;
+  color: #333;
+  margin-top: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.section03 .notice-box dd .badge {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background: #669ffa;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+.section03 .news-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.section03 .news-box li {
+  padding: 25px 0;
+  border-bottom: 1px solid #ddd;
+}
+.section03 .news-box dl {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.section03 .news-box dt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 28px;
+  border-right: 1px solid #ddd;
+}
+.section03 .news-box dt strong {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1;
+}
+.section03 .news-box dt span {
+  font-size: 17px;
+  margin-top: 3px;
+}
+.section03 .news-box dd {
+  margin: 0;
+}
+.section03 .news-box dd p {
+  font-size: 24px;
+  color: #333;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.section03 .news-box .more {
+  display: flex;
+  width: 180px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s;
+}
+.section03 .news-box .more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  transition: width 0.4s;
+}
+.section03 .news-box .more span {
+  position: relative;
+  z-index: 1;
+}
+.section03 .news-box .more:hover {
+  color: #fff;
+  border-color: #000;
+}
+.section03 .news-box .more:hover::before {
+  width: 100%;
+}
+
 @keyframes textUp {
   from {
     opacity: 0;
