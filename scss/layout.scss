@@ -517,6 +517,157 @@ body {
     }
   }
 }
+.section04 {
+  padding: 100px 0;
+
+  .container {
+    width: calc(100% - 220px);
+    max-width: 1380px;
+    margin: 0 auto;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 45px;
+      font-weight: 600;
+    }
+
+    // 상단 View more 버튼
+    .more {
+      display: flex;
+      width: 180px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      border: 1px solid #ddd;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      overflow: hidden;
+      transition: color 0.4s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #000;
+        transition: width 0.4s;
+      }
+
+      span {
+        position: relative;
+        z-index: 1;
+      }
+
+      &:hover {
+        border-color: #000;
+
+        &::before {
+          width: 100%;
+        }
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .list {
+    ul {
+      display: flex;
+      gap: 32px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      flex: 0 0 366px;
+
+      > a {
+        display: flex;
+        flex-direction: column;
+        height: 451px;
+        box-sizing: border-box;
+        padding: 48px 38px;
+        background: #000;
+        color: #fff;
+        border-radius: 20px;
+        transition: background 0.4s;
+      }
+    }
+
+    .category {
+      display: flex;
+      gap: 10px;
+
+      span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 18px;
+        background: #07336e;
+        border-radius: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: 600;
+      margin-top: 28px;
+    }
+
+    .bottom {
+      margin-top: auto;
+
+      .date {
+        display: block;
+        padding-bottom: 28px;
+        border-bottom: 1px solid #444;
+        font-size: 16px;
+      }
+
+      .view {
+        display: block;
+        margin-top: 28px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    // 카드 hover 효과
+    li > a:hover {
+      background: #0756b9;
+
+      h3 {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+
+      .category span {
+        background: #fff;
+        color: #0756b9;
+      }
+    }
+  }
+}
 @keyframes textUp {
   from {
     opacity: 0;
