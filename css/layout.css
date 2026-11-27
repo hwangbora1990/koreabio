@@ -469,7 +469,7 @@ body {
   font-weight: 600;
   color: #000;
   overflow: hidden;
-  transition: color 0.4s;
+  transition: all 0.25s ease;
 }
 .section04 .title .more::before {
   content: "";
@@ -479,7 +479,7 @@ body {
   width: 0;
   height: 100%;
   background: #000;
-  transition: width 0.4s;
+  transition: all 0.25s ease;
 }
 .section04 .title .more span {
   position: relative;
@@ -513,7 +513,7 @@ body {
   background: #000;
   color: #fff;
   border-radius: 20px;
-  transition: background 0.4s;
+  transition: all 0.25s ease;
 }
 .section04 .list .category {
   display: flex;
@@ -529,6 +529,7 @@ body {
   font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
+  transition: all 0.25s ease;
 }
 .section04 .list h3 {
   font-size: 22px;
@@ -561,6 +562,153 @@ body {
 .section04 .list li > a:hover .category span {
   background: #fff;
   color: #0756b9;
+  transition: all 0.25s ease;
+}
+
+.section05 {
+  padding: 100px 0 180px;
+  background-image: url(../images/main/sec6_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.section05 .container {
+  width: calc(100% - 220px);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.section05 .container .faq-list .answer {
+  display: flex;
+  gap: 25px;
+  padding: 25px 40px;
+  overflow: hidden;
+}
+.section05 .container .faq-list .answer .answer-content {
+  flex: 1;
+}
+.section05 .container .faq-list .answer .answer-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.section05 .container .faq-list .answer .answer-content p:last-child {
+  margin-bottom: 0;
+}
+.section05 .container .faq-list .answer .a {
+  display: flex;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background: #073266;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 600;
+}
+.section05 .container .faq-list details .arrow {
+  transition: transform 0.35s ease;
+  font-size: 30px;
+  color: #6b6b6b;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+.section05 .container .faq-list details[open] summary {
+  border-bottom: 1px solid #ddd;
+}
+.section05 .container .faq-list .question {
+  flex: 1;
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+}
+.section05 .container .faq-list .q {
+  display: flex;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 25px;
+}
+.section05 .container .faq-list details {
+  background: #fff;
+  border-radius: 18px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.section05 .container .faq-list summary {
+  display: flex;
+  align-items: center;
+  padding: 25px 40px;
+  cursor: pointer;
+  list-style: none;
+}
+.section05 .container .faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.section05 h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+.footer {
+  background: #141414;
+  color: #aaa;
+  font-size: 15px;
+  font-weight: 400;
+}
+.footer .container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.footer .footer-top {
+  display: flex;
+  padding: 60px 0 42px;
+}
+.footer .logo {
+  width: 300px;
+}
+.footer .logo img {
+  width: 193px;
+  opacity: 1;
+}
+.footer .info dl {
+  display: flex;
+  margin-bottom: 12px;
+  gap: 30px;
+}
+.footer .info dt {
+  width: 83px;
+  color: #fff;
+  font-weight: 600;
+}
+.footer .info dd {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #444;
+  padding: 24px 0;
+  font-size: 14px;
+}
+.footer .footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @keyframes textUp {
