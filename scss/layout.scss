@@ -677,7 +677,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 
   .container {
     width: calc(100% - 220px);
@@ -687,7 +687,7 @@ body {
       .answer {
         display: flex;
         gap: 25px;
-        padding: 25px 40px;
+        padding: 50px 40px;
         overflow: hidden;
         .answer-content {
           flex: 1;
@@ -763,7 +763,7 @@ body {
         margin-right: 25px;
       }
       details {
-        background: #fff;
+        background: #fdfcfa;
         border-radius: 18px;
         margin-bottom: 16px;
         overflow: hidden;
